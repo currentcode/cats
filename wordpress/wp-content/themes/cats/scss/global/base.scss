@@ -1,0 +1,62 @@
+html {
+	&.no-hdpi {
+		-webkit-font-smoothing: antialiased;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: middle;
+    line-height: 24px;
+    color: $clr_text;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure {
+	margin: 0;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	border: 0;
+}
+
+.entry-content h1, .entry-content h2, .comment-content h1, .comment-content h2 {
+	position: relative;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 400;
+	margin: 0 0 60px;
+	&:after {
+		content: '';
+		position: absolute;
+		border-bottom: solid 2px $clr_blue;
+		display: block;
+		width: 90px;
+		left: 50%;
+		margin-left: -45px;
+		bottom: -20px;
+	}
+}
+
+::-moz-selection {
+    background: lightblue;
+    color: #000;
+    text-shadow: none;
+}
+::selection {
+    background: lightblue;
+    color: #000;
+    text-shadow: none;
+}

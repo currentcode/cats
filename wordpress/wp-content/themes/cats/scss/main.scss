@@ -1,0 +1,22 @@
+
+/*
+Theme Name:     cats
+Theme URI:      http: //deinedomain.de/
+Description:    Child Theme for the catch-evolution theme
+Author:         Fabian
+Author URI:     http: //deinedomain.de/
+Template:       catch-evolution
+Version:        1.0
+
+*/
+
+
+
+@import "global/responsive";
+@import "global/old";
+@import "global/colors";
+@import "global/base";
+@import "global/reset_wp";
+
+@import "component/widget-info";
+@import "partial/header-menu";

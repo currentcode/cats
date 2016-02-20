@@ -1,0 +1,17 @@
+
+.widget-area aside{
+
+	background-color: $clr_sand;
+
+	.widget-title {
+	    color: $clr_brown;
+	    font-size: 20px;
+	    font-weight: 400;
+	    padding-bottom: 10px;
+	}	
+
+	.textwidget {
+		color: $clr_blue;
+		font-size: 16px;
+	}
+}
