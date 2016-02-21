@@ -5,13 +5,13 @@
 }
 
 #menu-button {
+	display: none;
     position: fixed;
     right: 30px;
     top: 40px;
     margin: auto 0;
     width: 25px;
     height: 19px;
-    display: block;
     cursor: pointer;
     -webkit-transition: -webkit-transform .3s cubic-bezier(.23,.83,.23,.99);
     transition: transform .3s cubic-bezier(.23,.83,.23,.99);
@@ -101,7 +101,9 @@ and (orientation : landscape),*/
     position: relative;
 }
 
-
+#menu-button {
+	display: block;
+}
 
 .menu-header-container {
 	width: 100% !important;
