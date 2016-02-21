@@ -15,7 +15,9 @@ Version:        1.0
 @import "global/colors";
 @import "global/base";
 @import "global/reset_wp";
+@import "global/layout";
 @import "global/responsive";
 
 @import "component/widget-info";
 @import "partial/header-menu";
+@import "pages/page-gallery";
