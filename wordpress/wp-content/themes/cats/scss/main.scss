@@ -11,12 +11,11 @@ Version:        1.0
 */
 
 
-
-@import "global/responsive";
 @import "global/old";
 @import "global/colors";
 @import "global/base";
 @import "global/reset_wp";
+@import "global/responsive";
 
 @import "component/widget-info";
 @import "partial/header-menu";

@@ -1,7 +1,63 @@
 .logo-cats {
     position: absolute;
-    top: 30px;	
+    margin-top: 30px;	
 	max-width: 236px;
+}
+
+#menu-button {
+    position: fixed;
+    right: 30px;
+    top: 40px;
+    margin: auto 0;
+    width: 25px;
+    height: 19px;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.23,.83,.23,.99);
+    transition: transform .3s cubic-bezier(.23,.83,.23,.99);
+
+	span {
+	    display: block;
+	    position: absolute;
+	    width: 21px;
+	    height: 2px;
+	    background: $clr_blue;
+		webkit-transition: -webkit-transform .3s cubic-bezier(.23,.83,.23,.99);
+    	transition: transform .3s cubic-bezier(.23,.83,.23,.99);	    
+	}
+
+	.bar-1 {
+	    left: 0;
+	    top: 0;
+	}
+	.bar-2 {
+	    left: 4px;
+	    top: 8px;
+	}
+	.bar-3 {
+	    left: 0;
+	    top: 16px;
+	}
+
+	&.show {
+		.bar-1 {
+		    -webkit-transform: rotate(45deg) scaleX(1.14);
+		    transform: rotate(45deg) scaleX(1.14);
+		    -webkit-transform-origin: left center;
+		    transform-origin: left center;
+		}
+		.bar-2 {
+
+		    -webkit-transform: translateX(100px);
+		    transform: translateX(100px);
+		}
+		.bar-3 {
+		    -webkit-transform: rotate(-45deg) translateX(-1px) scaleX(1.14);
+		    transform: rotate(-45deg) translateX(-1px) scaleX(1.14);
+		    -webkit-transform-origin: left center;
+		    transform-origin: left center;
+		}	
+	}
 }
 
 .menu-header-container {
@@ -33,4 +89,46 @@
 			}
 		}
 	}
+}
+
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape),*/
+@media screen and (max-width: 960px) {	
+
+.logo-cats {
+    position: relative;
+}
+
+
+
+.menu-header-container {
+	width: 100% !important;
+	max-height: 0;
+	overflow: hidden;
+	background-color: $clr_sand;
+	padding: 0 !important;
+	margin: 25px 0 0 !important;
+	-webkit-transition: max-height .5s;
+	transition: max-height .5s;
+
+	&.show {
+		max-height: 400px;
+		margin: 25px 0 45px !important;
+	}
+}
+
+#fixed-header-top ul.menu,
+#header-menu ul.menu, {
+	display: block;
+	text-align: left;
+	li {
+		float: none;
+		a {
+			padding-left: 40px;
+		}
+	}
+}
+
 }

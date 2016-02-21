@@ -1,21 +1,21 @@
 /* =Responsive Structure
 ----------------------------------------------- */
-
+body {
 @media screen and (max-width: 1224px) {
 	.wrapper {
-		width: 1024px;
+		width: 970px;
 	}
 	#primary {
-		width: 654px;
+		width: 580px;
 	}
 	#secondary {
-		width: 340px;
+		width: 320px;
 	}	
 	.widget_search #s {
 		width: 84%;
 	}
 	#header-content {
-		padding: 30px 0;
+		padding: 0 0 20px;
 	}
 	#main {
 		padding: 30px 0 0;
@@ -120,12 +120,15 @@ and (orientation : landscape) {
 		padding: 14px 0;
 		width: 95%;
 	}
-	.one-column.no-sidebar #fixed-header-top ul.menu,
-	.one-column.no-sidebar #header-menu ul.menu,
+
 	.one-column.no-sidebar .sidebar-top .widget_nav_menu ul.menu,
 	.one-column.no-sidebar #colophon #access-footer ul.menu,
 	.one-column.no-sidebar #access-secondary {
 		display: none;
+	}
+	.one-column.no-sidebar #fixed-header-top ul.menu,
+	.one-column.no-sidebar #header-menu ul.menu {
+		display: block;
 	}
 	.one-column.no-sidebar .sidebar-top .widget_nav_menu,
 	.one-column.no-sidebar.has-header-top.menu-logo #access-top {
@@ -217,14 +220,17 @@ and (orientation : landscape) {
 	#access-footer .wrapper {
 		padding: 14px 0;
 	}	
-	#fixed-header-top ul.menu,
-	#header-menu ul.menu,
+
 	.sidebar-top .widget_nav_menu ul.menu,
 	#colophon #access-footer ul.menu,
 	#header-menu #access-secondary,
 	#colophon #access-footer {
 		display: none;
 	}
+	#fixed-header-top ul.menu,
+	#header-menu ul.menu, {
+		display: block;
+	}	
 	.enable-menu #header-menu #access-secondary,
 	.enable-menu #colophon #access-footer {
 		display: block;
@@ -393,7 +399,7 @@ and (orientation : landscape) {
 		font-size: 16px;
 	}
 	#header-content {
-		padding: 20px 0;
+		padding: 0;
 	}
 	#main,
 	#supplementary,
@@ -769,4 +775,5 @@ and (max-width: 767px) {
 	input[type="password"] {
 		width: 98%;
 	}		
+}
 }
