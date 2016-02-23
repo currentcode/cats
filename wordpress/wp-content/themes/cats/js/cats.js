@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+
     $menu_header_container = $('.menu-header-container');
     $('#menu-button').on('click', function() {
     	if($(this).hasClass('show'))
