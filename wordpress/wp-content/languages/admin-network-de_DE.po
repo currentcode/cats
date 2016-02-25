@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-17 17:35:01+0000\n"
+"PO-Revision-Date: 2016-02-24 13:21:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -694,10 +694,6 @@ msgstr ""
 msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
 msgstr "Falls dein Browser nicht automatisch zur nächsten Seite weiterleitet, klicke auf folgenden Link:"
 
-#: wp-admin/network/settings.php:188
-msgid "If you want to limit site registrations to certain domains. One domain per line."
-msgstr "Falls du die Registrierung für bestimmte E-Mail-Domains (z.B. <em>example.com</em>) limitieren willst. Nutze pro Domain eine Zeile."
-
 #: wp-admin/network/settings.php:199
 msgid "If you want to ban domains from site registrations. One domain per line."
 msgstr "Falls du für bestimmte E-Mail-Domains (z.B. <em>example.com</em>) die Registrierung verbieten möchtest. Nutze pro Domain eine Zeile."
@@ -705,6 +701,10 @@ msgstr "Falls du für bestimmte E-Mail-Domains (z.B. <em>example.com</em>) die R
 #: wp-admin/network/site-new.php:40
 msgid "Can&#8217;t create an empty site."
 msgstr "Eine leere Website kann nicht erstellt werden."
+
+#: wp-admin/network/settings.php:188
+msgid "If you want to limit site registrations to certain domains. One domain per line."
+msgstr "Falls du die Registrierung für bestimmte E-Mail-Domains limitieren willst. Nutze pro Domain eine Zeile."
 
 #: wp-admin/network/users.php:195
 msgid "Users removed from spam."

@@ -53,12 +53,20 @@ img {
 	border: 0;
 }
 
-.entry-content h1, .entry-content h2, .comment-content h1, .comment-content h2 {
+input[type="submit"] {
+	background: #009FB4;
+    padding: 10px 20px;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+.entry-content h1, .comment-content h1 {
 	position: relative;
 	text-align: center;
 	font-size: 28px;
 	font-weight: 400;
-	margin: 0 0 60px;
+	margin: 0 0 50px;
 	&:after {
 		content: '';
 		position: absolute;
@@ -67,8 +75,20 @@ img {
 		width: 70px;
 		left: 50%;
 		margin-left: -35px;
-		bottom: -20px;
+		bottom: -15px;
 	}
+}
+
+.entry-content h2, .comment-content h2 {
+	position: relative;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0 0 10px;
+}
+
+.entry-content img {
+	margin: 50px 0;
 }
 
 ::-moz-selection {

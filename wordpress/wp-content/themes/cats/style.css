@@ -2915,13 +2915,20 @@ a {
 img {
   border: 0; }
 
-.entry-content h1, .entry-content h2, .comment-content h1, .comment-content h2 {
+input[type="submit"] {
+  background: #009FB4;
+  padding: 10px 20px;
+  color: white;
+  border: 0;
+  outline: 0; }
+
+.entry-content h1, .comment-content h1 {
   position: relative;
   text-align: center;
   font-size: 28px;
   font-weight: 400;
-  margin: 0 0 60px; }
-  .entry-content h1:after, .entry-content h2:after, .comment-content h1:after, .comment-content h2:after {
+  margin: 0 0 50px; }
+  .entry-content h1:after, .comment-content h1:after {
     content: '';
     position: absolute;
     border-bottom: solid 2px #00abce;
@@ -2929,7 +2936,17 @@ img {
     width: 70px;
     left: 50%;
     margin-left: -35px;
-    bottom: -20px; }
+    bottom: -15px; }
+
+.entry-content h2, .comment-content h2 {
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 10px; }
+
+.entry-content img {
+  margin: 50px 0; }
 
 ::-moz-selection {
   background: lightblue;
@@ -2948,8 +2965,10 @@ img {
 
 .entry-content p {
   margin-bottom: 30px; }
-.entry-content p + h1 {
+.entry-content p + h1, .entry-content p + h2 {
   margin-top: 80px; }
+.entry-content p + h2 {
+  margin-top: 50px; }
 
 /* =Responsive Structure
 ----------------------------------------------- */
@@ -3555,6 +3574,11 @@ body {
     color: #00abce;
     font-size: 16px; }
 
+@media screen and (min-width: 980px) {
+  #secondary {
+    position: fixed;
+    left: 50%;
+    margin-left: 165px; } }
 @media screen and (max-width: 767px) {
   .widget-area aside {
     padding: 20px;
@@ -3703,5 +3727,44 @@ and (orientation : landscape),*/
     border: 0; } }
 .page-id-17 #primary {
   width: 100% !important; }
+  .page-id-17 #primary .entry-content img {
+    margin: 0; }
+
+.page-id-11 #primary {
+  /*		.entry-content table, #primary .comment-content table {
+  			border-bottom: 0;
+  		}*/ }
+  .page-id-11 #primary th {
+    background-color: #00abce;
+    vertical-align: middle;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 8px; }
+  .page-id-11 #primary td {
+    padding: 15px 8px; }
+  .page-id-11 #primary .tablepress tbody tr:last-child td {
+    border-bottom: 0;
+    color: #00abce;
+    font-size: 20px; }
+  .page-id-11 #primary #tablepress-2 th {
+    padding: 4px 50px; }
+  .page-id-11 #primary #tablepress-2 td {
+    padding: 15px 50px; }
+  @media screen and (min-width: 1200px) {
+    .page-id-11 #primary .entry-content table, .page-id-11 #primary .comment-content table {
+      margin: 60px -50px 60px;
+      width: calc(100% + 100px); } }
+
+.page-id-5 input[type=text], .page-id-5 input[type=email] {
+  padding: 10px 6px; }
+.page-id-5 .wpcf7-form-control-wrap {
+  position: relative;
+  margin: 8px 0 0;
+  display: block; }
+.page-id-5 .entry-content p {
+  margin-bottom: 20px; }
+  .page-id-5 .entry-content p img {
+    margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

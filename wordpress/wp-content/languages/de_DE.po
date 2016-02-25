@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development (4.4.x) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-26 10:48:10+0000\n"
+"PO-Revision-Date: 2016-02-24 01:31:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -337,7 +337,7 @@ msgstr "Der ausgeschriebene Name darf nicht länger als 50 Zeichen sein."
 
 #: wp-includes/user.php:1974
 msgid "Could not save password reset key to database."
-msgstr "Der Code, zur Zurücksetzung des Passworts, konnte nicht in der Datenbank gespeichert werden."
+msgstr "Der Code zum Zurücksetzen des Passworts konnte nicht in der Datenbank gespeichert werden."
 
 #: wp-includes/user.php:140
 msgid "<strong>ERROR</strong>: Invalid username."
@@ -2177,10 +2177,6 @@ msgstr "Abmessungen:"
 msgid "Bitrate:"
 msgstr "Bitrate:"
 
-#: wp-includes/media-template.php:407
-msgid "Uploaded By"
-msgstr "Hochgeladen von:"
-
 #: wp-includes/media-template.php:424
 msgid "View attachment page"
 msgstr "Anhang-Seite ansehen"
@@ -2229,6 +2225,10 @@ msgstr "Rasteransicht"
 msgid "Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser&#8217;s edit menu instead."
 msgstr "Dein Browser unterstützt keinen direkten Zugriff auf die Zwischenablage. Bitte verwende stattdessen Tastaturkürzel oder die Bearbeiten-Funktion deines Browsers."
 
+#: wp-includes/media-template.php:407
+msgid "Uploaded By"
+msgstr "Hochgeladen von"
+
 #: wp-includes/customize/class-wp-customize-header-image-control.php:181
 msgid "While you can crop images to your liking after clicking <strong>Add new image</strong>, your theme recommends a header width of <strong>%s</strong> pixels."
 msgstr "Nachdem du <strong>Bild hinzufügen</strong> angeklickt hast, kannst du Bilder nach deinen Vorstellungen zuschneiden. Dein Theme empfiehlt jedoch eine Header-Breite von <strong>%s</strong> Pixeln."
@@ -2263,7 +2263,7 @@ msgstr "(WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. 
 
 #: wp-includes/class-wp-customize-widgets.php:1065
 msgid "Shift-click to edit this widget."
-msgstr "Shift klicken um dieses Widget zu bearbeiten."
+msgstr "Shift klicken, um dieses Widget zu bearbeiten."
 
 #: wp-includes/class-wp-editor.php:831
 msgctxt "HTML tag"

@@ -16,6 +16,14 @@
 	}
 }
 
+@media screen and (min-width: 980px) {
+#secondary {
+    position: fixed;
+    left: 50%;
+    margin-left: 165px;
+}
+}
+
 @media screen and (max-width: 767px) {
 .widget-area aside{
 	padding: 20px;
