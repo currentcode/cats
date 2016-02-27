@@ -9,4 +9,8 @@ $( document ).ready(function() {
 
     })
 
+    if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
+		var font = $('#font').detach();
+		$('head').append(font);;
+ 	}
 });

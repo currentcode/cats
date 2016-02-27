@@ -21,7 +21,7 @@
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Roboto' rel='stylesheet' type='text/css'>
+<link id="font" href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Roboto' rel='stylesheet' type='text/css'>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -34,6 +34,8 @@
 	 */
 	wp_head();
 ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>

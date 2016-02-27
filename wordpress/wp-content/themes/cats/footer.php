@@ -63,15 +63,8 @@ do_action( 'catchevolution_after_main' );
 
 </div><!-- #page -->
 
-<?php 
-/** 
- * catchevolution_after hook
- */
-do_action( 'catchevolution_after' );
-?>
 
 <?php wp_footer(); ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="/wp-content/themes/cats/js/cats.js"></script>
 
 </body>
